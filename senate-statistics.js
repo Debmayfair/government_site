@@ -4951,4 +4951,4 @@ var statistics = {
 console.log(JSON.stringify(statistics["NumberOfDemocrats"]));
 
 /*Git Hub = sistema de control de versioesn , VCS, es u nhistorial de todos llos cambios que se estan haciendo, si cometemos un error y rmpemos el codigo, podemos volver  la ultima version, trabajar en equipo, y sirve tmb como curriculum.sería como el fb del codigo. hay tres cosas: esta el workin director, donde tiene s
-git init, cuando entras en tu consola, entramos en el directorio, le deimos voy a inicializar git con mi documento. git init = dice a esa carpeta que se va a crear ahi un repositorio, donde guardamos todas las cosas, asñi se creara una carpeta oculta dnd se guararan toos los commits = todos los cambios que hacemos. 
+git init, cuando entras en tu consola, entramos en el directorio, le deimos voy a inicializar git con mi documento. git init = dice a esa carpeta que se va a crear ahi un repositorio, donde guardamos todas las cosas, asñi se creara una carpeta oculta dnd se guararan toos los commits = todos los cambios que hacemos. Estamos en proceso de mejorar cada dia*/
