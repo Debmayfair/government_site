@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>Senators</title>
+        <style>
+        .header{
+            margin-top: 40px; 
+            margin-bottom: 30px;
+        }
+        .mail{
+            margin-left: 85%;
+            padding-top: 5%;
+            margin-top: 0%;
+            }
+        .navbarcontainer {
+              margin-top: 50px;  
+            }
+        .state-filter{
+            margin-left: 80%;
+            margin-top: -5%;
+            margin-bottom: 2%;
+            }
+        
+        .footercontainer{
+                margin-top: 30px;
+                margin-bottom: 50px;
+            }
+
+        </style>
+    </head>
+    
+    <body class="container">
+        <div class = "header">
+            <div class = "blank pull-left">
+                <img class = "image-responsive" src = "Images/govimage1.png" alt = "TGIF Logo" width = "150">
+            </div>
+            <div class = "mail">
+                <img class = "image-responsive pull-right" src = "Images/email.png" width = "30">
+                <a href="mailto:info@tgif.net?subject=TGIF%20Information&body=Hello,%20I'%20d%20like%20to%20know%20about."><h4>info@tgif.net</h4>
+                </a>
+            </div>
+            <div class = "navbarcontainer">
+            <nav class = "navbar navbar-inverse">
+            <div class = "container-fluid">
+                <div class = "navbar-header">
+                    <a class = "navbar-brand" href = "#"> TGIF</a>
+                </div>
+                <ul class = "nav navbar-nav">
+                    <li>
+                        <a class = "nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class = "active dropdown">
+                        <a class = "dropdown-toggle" data-toggle = "dropdown" href="#">Congress 113<span class = "caret"></span></a>
+                            <ul class = "dropdown-menu">
+                                <li><a href="senate-data.html">Senate</a></li>
+                                <li><a href="house-data.html">House</a></li>
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+            </nav>
+            </div>
+          </div>
+             
+  
+
+        <header>            
+            <div>
+            </div>
+        </header>
+        <!--Table container-->
+        <div class="container">
+            <h2>Senators</h2>
+            <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.</p>
+            
+            <fieldset class = "container flex-container">
+                <div>
+                    <h4 class = "party-filter">Filter by Party</h4>
+                </div>
+                <div>
+                    <label class = "partyR">
+                        <input type = "checkbox" id = "oncheckR" onclick = "myFunction()" name = "partyfilter" value = "R"> Republican
+                    </label>
+                    <label class = "partyD">
+                        <input type = "checkbox" id = "oncheckD" onclick = "myFunction()" name = "partyfilter" value = "D"> Democrat
+                    </label>
+                    <label class = "partyI">
+                        <input type = "checkbox" id = "oncheckI" onclick = "myFunction()" name = "partyfilter" value = "I"> Independent
+                    </label>
+                </div>
+                
+            </fieldset>
+            
+            <fieldset class = "container flex-container state-filter">
+                <div>
+                    <h4>Filter by State</h4>
+                </div>
+                <div>
+                <label>
+                <select id = "state-data" onchange="stateFilter()" name=”State”>
+                    <option value = "All" selected>All</option>
+	                <option value = "AK">AK</option>
+	                <option value = "AL">AL</option>
+                    <option value = "AR">AR</option>
+                    <option value = "AZ">AZ</option>
+                    <option value = "CA">CA</option>
+                    <option value = "CO">CO</option>
+                    <option value = "CT">CT</option>
+                    <option value = "DE">DE</option>
+                    <option value = "FL">FL</option>
+                    <option value = "GA">GA</option>
+                    <option value = "HI">HI</option>
+                    <option value = "IA">IA</option>
+                    <option value = "ID">ID</option>
+                    <option value = "IN">IN</option>
+                    <option value = "IL">IL</option>
+                    <option value = "KS">KS</option>
+                    <option value = "KY">KY</option>
+                    <option value = "LA">LA</option>
+                    <option value = "MA">MA</option>
+                    <option value = "MD">MD</option>
+                    <option value = "ME">ME</option>
+                    <option value = "MI">MI</option>
+                    <option value = "MN">MN</option>
+                    <option value = "MO">MO</option>
+                    <option value = "MS">MS</option>
+                    <option value = "MT">MT</option>
+                    <option value = "NC">NC</option>
+                    <option value = "ND">ND</option>
+                    <option value = "NE">NE</option>
+                    <option value = "NH">NH</option>
+                    <option value = "NJ">NJ</option>
+                    <option value = "NM">NM</option>
+                    <option value = "NV">NV</option>
+                    <option value = "NY">NY</option>
+                    <option value = "OH">OH</option>
+                    <option value = "OK">OK</option>
+                    <option value = "OR">OR</option>
+                    <option value = "PA">PA</option>
+                    <option value = "RI">RI</option>
+                    <option value = "SC">SC</option>
+                    <option value = "SD">SD</option>
+                    <option value = "TN">TN</option>
+                    <option value = "TX">TX</option>
+                    <option value = "UT">UT</option>
+                    <option value = "VA">VA</option>
+                    <option value = "VT">VT</option>
+                    <option value = "WA">WA</option>
+                    <option value = "WI">WI</option>
+                    <option value = "WV">WV</option>
+                    <option value = "WY">WY</option>
+                </select>
+                </label>    
+                </div>
+            </fieldset>
+        
+            <table id="senate_data" class="table"></table>
+            
+        <script type="text/javascript" src="pro-congress-113-senate.js"></script>
+            
+        </div>
+
+       <footer class = "container footercontainer">
+            <p>&copy; 2016 TFIG | All rights reserved</p>
+        </footer>
+</body>
+</html>
